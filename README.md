@@ -1,168 +1,157 @@
-# 📊 FedMobile SQL Analytics Project
+# 📊 Behavioral & Transactional Analytics of FedMobile Using SQL  
 
-This project models usage behaviour for a fictional mobile banking app called **FedMobile**, simulating real-world user activity and survey-based perception data. It serves as a playground for learning and practicing SQL data modeling, analytics, metrics tracking and business interpretation of user data.
+A SQL-driven exploration of user engagement, app event behavior, transactional flow, and sentiment indicators for a simulated digital banking dataset. This project models realistic user interaction and survey patterns, serving as a platform for analytical SQL and behavioral interpretation.
 
-The final output is a rich database that supports analysis of user engagement, monetary transactions, app usage frequency, and product sentiment.
+The final database enables analysis of DAU, event frequency, transaction value, perception-behavior relationships, and usage driven by advertisement awareness.
 
 ---
 
 ## 🧩 1. Data Model Overview
 
-The database is designed with three core entities:
+The project consists of three core data entities:
 
 ### 👤 `customers`
-Represents application users.  
-Includes demographic characteristics such as gender, age, and location, along with the timestamp when they joined.
+Represents app users, their demographics, and onboarding timestamp.
 
 Used for:
-- demographic segmentation  
+- user segmentation  
+- demographic insights  
 - usage differences by age/gender/city  
-- linking behavioural and survey data
+- linking behavior and survey outcomes  
 
----
+#### 📸 Customers Table Preview
 
-- ### 👤 Customers Table Preview
-
-This shows a portion of the customer dataset, including full name, gender, age and location:
-
-![customers table3](https://github.com/user-attachments/assets/a248f2e8-82d2-4921-b960-bd2a29de6c21)
+![customers 10 values copy](https://github.com/user-attachments/assets/af6d59ae-67ff-4649-a3c2-31a008dc24e1)
 
 ---
 
 ### 📱 `app_usage`
-Represents individual app events.  
-Each row is a user action such as login, transfer, bill payment or recharge, along with a timestamp and optional monetary amount.
+Represents timestamped user activity, including logins, transfers, recharges, bill payments, etc.
 
 Used for:
 - measuring engagement  
-- frequency of transaction types  
-- time-based behavior  
-- transaction revenue  
-- DAU/WAU trends  
-- identifying power users
+- transaction patterns  
+- time-based usage  
+- revenue analysis  
+- DAU trends  
 
----
-
-### 📱 App Usage Events (Sample Data)
-
-Below is a sample of recorded in-app events such as logins, transfers and bill payments, including timestamps and transaction amounts:
-
-![app_usage table3](https://github.com/user-attachments/assets/70288938-f71f-4a81-8597-d6d7c0ebc76f)
+#### 📸 App Usage Events Preview  
+![app usage values](https://github.com/user-attachments/assets/99833a6a-c04a-4a41-841a-22029039bec2)
 
 ---
 
 ### 📝 `survey`
-Represents user sentiment and perception of the product.  
-Includes 1–5 ratings for awareness, ease-of-use, security feeling, and recommendations, plus a switching indicator if the user switched due to advertisements.
+Captures perception data such as:
+- awareness  
+- ad influence  
+- ease-of-use  
+- trust  
+- peer recommendation  
+- switching due to ads  
 
 Used for:
-- understanding perception  
-- linking sentiment to behavior  
-- conversion influenced by ads  
-- trust and satisfaction analysis  
----
+- measuring sentiment  
+- evaluating marketing impact  
+- correlating opinion to behavior  
 
-### 📝 Survey Responses (Sample Data)
-
-This table captures user perception data, including Likert-scale ratings for awareness, usability, trust and switching behaviour:
-
-![survey table 3](https://github.com/user-attachments/assets/3f93c8c7-d207-4a91-a268-d8bffa6d2c56)
+#### 📸 Survey Table Preview  
+![survey values](https://github.com/user-attachments/assets/fad0f27c-722c-41cc-a7b1-5f73659f6b1b)
 
 ---
 
-## 🧪 2. Sample and Synthetic Data
+## 🧪 2. Sample & Synthetic Data
 
-The database includes two types of data population:
+This project uses:
 
-### 🧮 A) Hand-crafted sample data
-- initial users  
-- app activity logs  
-- survey responses  
+### 🧮 A) Manually curated sample data  
+for clean validation and readability.
 
-Useful for basic validation and testing.
-
-### 🎲 B) Synthetic randomized data 
-Random data generators create:
-- additional customers  
-- additional events  
-- additional surveys  
-
-These allow the dataset to scale to hundreds or thousands of rows, simulating more realistic data volumes.
+### 🎲 B) SQL-randomized synthetic data  
+for simulating:
+- statistical variance  
+- scale (hundreds to thousands of users)  
+- realistic behavior noise  
 
 ---
 
-## 🔍 3. Views for Analysis
+## 🔍 3. Analytical Views
 
-To simplify repeated queries, the project defines:
+Reusable SQL views created for simplified analytics:
 
 ### 👥 `v_customers`
-Clean representation of user information.
+Organized user demographic representation.
 
 ### 📅 `v_daily_events`
-Daily aggregation of app events, including:
-- event count  
-- unique users  
-- total monetary sum  
+Provides per-day:
+- total events  
+- unique active users  
+- monetary sums  
 
 ### 🧑‍💼 `v_customer_event_summary`
-Shows event patterns per user:
-- total usage  
-- transfer frequency  
-- bill payment frequency  
+Per-user behavioral breakdown:
+- total actions  
+- transfers made  
+- bills paid  
 
 ### 📈 `v_awareness_switch_rate`
-Maps awareness score to switching percentage.
+Shows switching tendency relative to awareness rating.
 
 ---
 
 ## 📊 4. Analytics Queries
 
-Prebuilt analytical SQL used to answer questions like:
+Includes SQL for determining:
 
-- How many customers exist?  
-- How many total app events occurred?  
-- What are the most common event types?  
-- What is daily active user count (DAU)?  
-- Which users perform the most transfers?  
-- What is the revenue trend over time?  
-- How many users switched due to ads?  
-- How does perception correlate with switching?
-
-These reflect real mobile app analytics workflows.
-
----
-
-## 🧠 5. Use Cases
-
-This project is ideal for practicing:
-
-- database schema design  
-- analytical SQL  
-- behaviour and engagement analytics  
-- business intelligence  
-- customer segmentation  
-- product UX measurement  
-- marketing attribution  
+- total users  
+- total usage events  
+- daily active users  
+- most active users  
+- most used features  
+- average survey scores  
+- switching behaviour distribution  
+- channel preference (mobile vs web)  
+- transfer amount patterns  
+- top revenue days  
 
 ---
 
-## 🚀 6. Future Enhancements
+## 📈 5. Insights and Observations  
+- Transfers contribute high monetary flow  
+- Activity is dominant via mobile channel  
+- Higher ease-of-use scores correlate with consistent engagement  
+- Users with lower awareness more likely influenced by advertising  
 
-Planned extensions include:
+---
 
-- more event categories  
-- usage clustering  
+## 🛠️ 6. Setup & Reproduction
+
+To recreate the environment:
+
+1. Create database `fedmobile`  
+2. Run schema creation scripts  
+3. Insert sample and synthetic data  
+4. Create views  
+5. Execute analytical queries  
+
+---
+
+## 🚀 7. Future Extensions
+
+Planned upgrades:
+
 - churn detection  
-- user retention metrics  
-- cohort analysis  
-- dashboarding in Power BI or Tableau  
+- retention cohorting  
+- clustering of user usage profiles  
+- lifetime value estimations  
+- anomaly detection  
+- dashboard visualization (Power BI / Tableau)  
 
 ---
 
-## ✍️ 7. Author
+## ✍️ 8. Author
 
 Created by **Sreelakshmi Thilakan**  
-For SQL learning, analytics exploration and portfolio demonstration.
+For SQL learning, behavioral analytics practice, and portfolio demonstration.
 
 ---
 
