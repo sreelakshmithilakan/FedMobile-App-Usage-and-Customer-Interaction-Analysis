@@ -399,11 +399,11 @@ Potential extensions include:
 
 # 👩‍💻 Author
 
-**Sreelakshmi Thilakan**
+**Sreelakshmi V T**
 
 Built as a portfolio project to demonstrate **SQL analytics, behavioral analysis, and BI dashboarding.**
 
 ## ✍️ 9. Author
 
-Created by **Sreelakshmi Thilakan**  
+Created by **Sreelakshmi V T**  
 For SQL learning, behavioral analytics practice, and portfolio demonstration.
