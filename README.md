@@ -285,10 +285,10 @@ Revenue by Segment:
 - Evaluated engagement inequality  
 - Measured revenue concentration  
 
-### 📅 Cohort-Style Analysis
-<img width="433" height="96" alt="COHORT-STYLE ANALYSIS" src="https://github.com/user-attachments/assets/5222c875-6fba-493e-a5c0-a4185322619f" />
+### 📅 Activity Cohort Analysis
+<img width="495" height="199" alt="image" src="https://github.com/user-attachments/assets/c3bfefb1-0ca8-4b45-8cab-3142b8ce4192" />
 
-Users grouped by signup month to observe engagement sustainability.
+Platform activity grouped by event month to observe engagement trends and revenue performance over time.
 
 ### 📱 Channel Performance Analysis
 <img width="562" height="78" alt="CHANNEL PERFORMANCE ANALYSIS" src="https://github.com/user-attachments/assets/00372adc-72f9-4479-b94b-701c4b350895" />
