@@ -246,7 +246,8 @@ Beyond descriptive reporting, structured Business Intelligence investigations we
 
 Login → First Monetary Transaction → Repeat Monetary Transaction  
 
-<img width="651" height="83" alt="FUNNEL ANALYSIS" src="https://github.com/user-attachments/assets/82c5ae7f-08d9-4645-bd70-471d8ab1a2d1" />
+<img width="517" height="61" alt="FUNNEL ANALYSIS" src="https://github.com/user-attachments/assets/c0c5dda7-d066-4957-a438-a32d5f42c0b7" />
+
 
 - Measured conversion between stages  
 - Identified engagement drop-off  
