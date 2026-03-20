@@ -372,6 +372,27 @@ Dashboard highlights:
 
 ---
 
+## 💼 Strategic Recommendations
+
+*Derived from SQL behavioral analysis and Power BI findings — actionable directions for the FedMobile product team.*
+
+**1. Reduce funnel drop-off between login and first transaction**
+The funnel analysis shows a measurable gap between users who log in and those who complete a first monetary transaction. The product team should investigate whether this drop-off is a UX friction issue (e.g. too many steps to initiate a transfer) or an awareness issue (users not discovering features). A/B testing a simplified onboarding flow or a first-transaction nudge notification could meaningfully improve conversion.
+
+**2. Focus retention efforts on medium-activity users, not just high-activity ones**
+Revenue is concentrated among high-activity users, but this creates fragility — churn from this segment would disproportionately impact revenue. Medium-activity users represent the highest-potential growth segment. Targeted in-app prompts (e.g. bill payment reminders, recharge suggestions) timed around their existing login patterns could push them toward higher engagement tiers.
+
+**3. Prioritise mobile experience over web — but don't abandon web for high-value transactions**
+Mobile dominates engagement volume, but channel performance analysis should be checked for average transaction value differences between mobile and web. If web users transact at higher values (common in banking), the web experience deserves investment even if raw event counts are lower.
+
+**4. Use ease-of-use score as an early churn signal**
+The survey–behavior correlation shows higher ease-of-use scores link to consistent engagement. This means ease-of-use ratings collected post-onboarding could serve as a leading indicator of future retention — users rating the app below a threshold should be flagged for proactive support or UX intervention before they churn.
+
+**5. Revenue growth strategy should focus on transaction volume, not transaction size**
+Revenue decomposition confirms that volume — not average transaction value — drives revenue variation. This means acquisition and activation strategies (getting more users to transact more frequently) will yield better returns than strategies aimed at increasing spend per transaction.
+
+---
+
 # ⚙️ Reproducing the Project
 
 To recreate the analysis:
