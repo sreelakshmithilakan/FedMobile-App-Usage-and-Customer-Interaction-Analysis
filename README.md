@@ -1,21 +1,19 @@
 # 📊 FedMobile Banking App Analytics
-
 ### SQL Behavioral Analytics & Power BI Insights
 
 ## 📊 Project Overview
 
-This project analyzes **user engagement, transactional behavior, and perception indicators** for a simulated digital banking application using **SQL and Power BI**.
+This project simulates a **product analytics engagement for a digital banking application**, analyzing user engagement, transactional behavior, and perception indicators using **SQL and Power BI**.
 
-The objective is to demonstrate how behavioral data can be transformed into **actionable insights** through structured SQL analysis and business intelligence visualization.
+The objective is to answer real product and business questions: *which features drive revenue, where users drop off, and how perception relates to actual behavior* — the kind of analysis a data analyst would perform for a fintech product team.
+
+> 💡 As proprietary banking transaction data is not publicly available, a structured synthetic dataset was designed to simulate realistic user behavior patterns — enabling rigorous SQL analytics and BI reporting on a privacy-safe foundation. This approach mirrors standard practice in fintech analytics where live customer data cannot be used outside production environments.
 
 **Analytics Workflow**
 
-Synthetic Data Generation → Relational Data Model → Analytical SQL Queries → Behavioral Analysis → Business Intelligence Dashboard
-
-The analysis explores how users interact with the app, which features drive revenue, and how user perception relates to actual engagement patterns.
+Business Problem Definition → Data Modeling → Behavioral Analysis → BI Dashboard → Strategic Recommendations
 
 ---
-
 # 🎯 Project Objectives
 
 This project aims to answer key product and business questions:
