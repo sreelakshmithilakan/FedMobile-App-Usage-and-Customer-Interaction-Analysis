@@ -111,30 +111,7 @@ A structured synthetic dataset was created to simulate real-world banking behavi
 
 ---
 
-## 7. Dashboard / Visualizations
-
-### Usage and Revenue Insights
-
-![Dashboard 1](https://github.com/user-attachments/assets/64305349-c221-4b4f-9247-f67c610a9eb1)
-
-- Revenue by event type  
-- Daily active users trend  
-- Revenue by channel  
-- Top customers by transaction value  
-
----
-
-### User Demographics and Perception
-
-![Dashboard 2](https://github.com/user-attachments/assets/1ec50771-4d95-46f7-8883-5c0679b6ea80)
-
-- Customer distribution by city and age  
-- Survey perception metrics  
-- Switching rate by awareness level  
-
----
-
-## 8. Conclusion
+## 7. Conclusion
 
 User engagement and revenue in digital banking are driven by behavioral patterns rather than individual transaction size.  
 Reducing friction in early-stage interactions and improving user experience can significantly increase conversion and retention.
