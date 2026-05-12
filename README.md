@@ -1,150 +1,286 @@
-# FedMobile Banking App: User Engagement and Behavioral Analysis
+# Banking App User Engagement & Behavioral Analytics
+### User Engagement, Funnel Conversion & Behavioral Intelligence Analysis
 
 ---
 
-## Key Highlights
+# Overview
 
-- Built an end-to-end product analytics workflow using SQL, MySQL, and Power BI  
-- Analyzed user engagement, conversion funnel, and revenue drivers using 500+ simulated user records  
-- Identified drop-offs between login and first transaction as the key conversion bottleneck  
-- Quantified behavioral patterns using funnel analysis, cohort analysis, and revenue decomposition  
+Banking App User Engagement & Behavioral Analytics is an end-to-end SQL and Business Intelligence project designed to analyze customer behavior, engagement patterns, transaction activity, and revenue performance within a digital banking environment.
 
----
+Using SQL and Power BI, the project transforms behavioral and transactional data into actionable business insights through:
+- Funnel analysis
+- User segmentation
+- Revenue decomposition
+- Monthly engagement analysis
+- Behavioral correlation analysis
 
-## Business Impact
-
-This analysis enables product and business teams to:
-- Improve user activation and retention through funnel optimization  
-- Identify high-value user segments and reduce revenue concentration risk  
-- Optimize feature strategy based on actual revenue contribution  
-- Use behavioral and survey signals to predict churn and engagement  
+The project simulates a realistic analytics workflow commonly used in fintech and digital product environments.
 
 ---
 
-## 1. Problem Statement / Business Objective
+# Key Highlights
 
-Digital banking success depends on user engagement, retention, and transaction behavior.  
-This project analyzes user interaction data from a simulated banking app to understand:
-
-- How users engage with the platform and which features drive activity  
-- Where users drop off in the transaction funnel  
-- What drives revenue: transaction volume or value  
-- Whether user perception (ease of use, trust) aligns with actual behavior  
-
----
-
-## 2. Dataset Description
-
-A structured synthetic dataset was created to simulate real-world banking behavior due to the unavailability of public financial transaction data.
-
-**Dataset includes:**
-- Customer demographics (age, city, gender)  
-- App usage events (logins, transfers, bill payments, etc.)  
-- Survey responses (trust, awareness, ease of use, switching intent)  
-
-**Data model:**
-- Customers table  
-- App usage events table  
-- Survey responses table  
+- Built a complete analytics workflow using MySQL, SQL, and Power BI
+- Designed a relational database schema for banking analytics
+- Analyzed 500+ simulated banking records across customer, transaction, and survey datasets
+- Created reusable SQL views and KPI reporting queries
+- Performed funnel analysis, engagement segmentation, and revenue analysis
+- Connected customer perception metrics with behavioral activity
 
 ---
 
-## 3. Data Cleaning & Preparation
+# Tech Stack
 
-- Designed a relational schema using **MySQL** to model user, event, and perception data  
-- Generated synthetic data using SQL functions (`RAND()`, `FLOOR()`, `DATE_ADD()`) to simulate realistic behavior patterns  
-- Created reusable SQL views to structure analysis-ready datasets  
-
----
-
-## 4. Analysis Performed
-
-- Conducted **SQL-based behavioral analysis** using joins, aggregations, CTEs, and window functions  
-- Performed **funnel analysis** (login → first transaction → repeat transaction) to identify conversion drop-offs  
-- Applied **cohort analysis** to track user engagement trends over time  
-- Performed **revenue decomposition** to separate transaction volume vs value impact  
-- Analyzed **user segmentation** based on activity levels and revenue contribution  
-- Evaluated **correlation between survey perception and actual behavior**  
+| Tool | Purpose |
+|------|----------|
+| MySQL | Database management |
+| SQL | Querying and analytics |
+| Power BI | Dashboard visualization |
+| SQL Views | Analytical reporting |
+| GitHub | Project documentation |
 
 ---
 
-## 5. Tools & Technologies Used
+# Business Problem
 
-- **MySQL / SQL** – Data modeling, querying, and analysis  
-- **Power BI** – Dashboard development and KPI visualization  
-- **SQL Functions** – Synthetic data generation and transformation  
-- **Analytical Techniques** – Funnel analysis, cohort analysis, segmentation, revenue decomposition  
+Digital banking platforms generate large volumes of customer interaction and transaction data every day.
 
----
+The challenge is identifying:
+- Why users remain inactive after registration
+- Which users contribute the highest engagement and revenue
+- How customer experience impacts retention
+- Whether perception metrics align with actual behavior
 
-## 6. Key Insights
-
-### Funnel Conversion
-
-- Significant drop-off observed between login and first transaction, indicating a key activation bottleneck  
-
-![Funnel](https://github.com/user-attachments/assets/c0c5dda7-d066-4957-a438-a32d5f42c0b7)
+This project addresses these questions using SQL-driven business intelligence analysis.
 
 ---
 
-### Revenue Drivers
+# Dataset Description
 
-- Revenue variation is driven primarily by transaction volume, not transaction size  
+Due to privacy and accessibility limitations surrounding financial transaction data, this project uses a simulated banking dataset designed to reflect realistic customer activity and engagement patterns.
+
+The dataset includes:
+- Customer demographics
+- App usage events
+- Transaction activity
+- Behavioral engagement patterns
+- Survey responses and perception metrics
+
+The data model was structured to support analytical workflows such as funnel analysis, segmentation, revenue analysis, and behavioral correlation studies.
+
+---
+
+# Database Architecture
+
+The project uses a relational schema consisting of three core tables.
+
+## Customers Table
+Stores customer demographic information.
+
+### Includes:
+- Customer ID
+- Name
+- Gender
+- Age
+- City
+
+---
+
+## App Usage Table
+Tracks customer activity and transactional behavior.
+
+### Event Types:
+- Login
+- Transfer
+- Bill Payment
+- Recharge
+- Profile Update
+- Logout
+
+---
+
+## Survey Table
+Captures customer perception and switching behavior.
+
+### Includes:
+- Ease of use
+- Security trust
+- Ad influence
+- Peer recommendation
+- Switching intent
+
+---
+
+# Data Preparation & Engineering
+
+- Designed a normalized relational schema using MySQL
+- Implemented primary keys, foreign keys, and indexing
+- Structured event-based datasets for analytical workflows
+- Created reusable SQL views for reporting and KPI analysis
+- Organized data to support scalable business intelligence analysis
+
+---
+
+# SQL Analysis Performed
+
+## KPI Analysis
+- Total customers
+- Total events
+- Daily Active Users (DAU)
+- Most active customers
+- Revenue trends
+- Transfer analysis
+
+---
+
+## Funnel Analysis
+Tracked user progression through:
+- Login
+- First monetary transaction
+- Repeat transaction
+
+---
+
+## Revenue Analysis
+Measured:
+- Transaction volume
+- Average transaction value
+- Revenue contribution
+
+---
+
+## Engagement Segmentation
+Classified users into:
+- High Activity
+- Medium Activity
+- Low Activity
+
+---
+
+## Monthly Engagement Analysis
+Analyzed:
+- Monthly engagement trends
+- Revenue patterns over time
+- Changes in user activity across periods
+
+---
+
+## Channel Performance Analysis
+Compared:
+- Mobile users
+- Web users
+
+Using:
+- Revenue
+- Event volume
+- Unique users
+
+---
+
+## Survey–Behavior Correlation
+Connected customer perception with:
+- Engagement
+- Transaction frequency
+- Revenue generation
+
+---
+
+# Dashboard Snapshots
+
+## Funnel Conversion Analysis
+
+This analysis tracks how users move through the platform journey:
+
+**Login → First Transaction → Repeat Transaction**
+
+A significant reduction is observed between total registered users and active logged-in users, indicating an engagement gap at the platform activation stage.
+
+However, users who log in show strong progression toward monetary activity and repeat transactions.
+
+![Funnel Analysis](https://github.com/user-attachments/assets/c0c5dda7-d066-4957-a438-a32d5f42c0b7)
+
+---
+
+## Revenue Decomposition
+
+Revenue analysis shows that revenue growth is influenced more by transaction frequency than transaction size.
 
 ![Revenue Breakdown](https://github.com/user-attachments/assets/35da3dd9-e351-469c-87db-94854b58fb1e)
 
 ---
 
-### User Segmentation
+## User Segmentation
 
-- High-activity users contribute disproportionately to revenue, creating concentration risk  
+Users were segmented based on engagement levels into:
+- High Activity
+- Medium Activity
+- Low Activity
 
-![Segmentation](https://github.com/user-attachments/assets/1387085d-2151-49a6-928c-00cc07ddac47)
+High-activity users contribute a disproportionately large share of total revenue.
+
+![User Segmentation](https://github.com/user-attachments/assets/1387085d-2151-49a6-928c-00cc07ddac47)
 
 ---
 
-### Behavioral vs Perception Gap
+## Behavioral vs Perception Analysis
 
-- Ease-of-use and trust scores strongly correlate with engagement and repeat transactions  
+Survey perception metrics were correlated with transactional behavior.
+
+Users reporting higher ease-of-use and trust scores demonstrated stronger engagement and repeat transactions.
 
 ![Survey Analysis](https://github.com/user-attachments/assets/1aa7cade-b486-4848-bd66-d1c7fd46626a)
 
 ---
 
-## 7. Conclusion
+# Key Insights
 
-User engagement and revenue in digital banking are driven by behavioral patterns rather than individual transaction size.  
-Reducing friction in early-stage interactions and improving user experience can significantly increase conversion and retention.
+### Platform Activation Gap
+A noticeable reduction exists between total registered users and users actively logging into the platform.
 
----
+### Strong Post-Login Conversion
+Users who log in demonstrate strong progression toward monetary activity and repeat transactions.
 
-## 9. Strategic Recommendations
+### Revenue Driver
+Revenue variation is influenced more by transaction frequency than transaction size.
 
-- Optimize onboarding and first transaction experience to reduce funnel drop-offs  
-- Focus retention strategies on medium-activity users for scalable growth  
-- Prioritize mobile experience while evaluating high-value web transactions  
-- Use ease-of-use scores as an early churn indicator  
-- Drive growth through increased transaction frequency rather than transaction size  
+### Engagement Concentration
+A relatively small group of highly active users contributes a large share of total revenue.
 
----
-
-## 10. How to Reproduce
-
-1. Create database `fedmobile`  
-2. Run schema creation scripts  
-3. Insert synthetic data  
-4. Create analytical views  
-5. Execute SQL queries  
-6. Connect Power BI for visualization  
+### User Experience Impact
+Ease-of-use and trust scores strongly correlate with engagement and repeat activity.
 
 ---
 
-## 11. Future Extensions
+# SQL Concepts Used
 
-- Churn prediction model  
-- Customer lifetime value (CLV) modeling  
-- Behavioral clustering  
-- Advanced cohort retention analysis  
-- Anomaly detection for transaction patterns  
+- Joins
+- Aggregations
+- CASE Statements
+- Views
+- Indexing
+- Foreign Keys
+- Conditional Aggregation
+- DATE Functions
+- Revenue Analysis
 
 ---
+
+# Project Structure
+
+| File | Purpose |
+|------|----------|
+| `00_create_tables.sql` | Database schema creation |
+| `01_seed_sample_data.sql` | Data generation and inserts |
+| `02_views.sql` | Analytical SQL views |
+| `03_analytics_queries.sql` | KPI and reporting queries |
+| `04_advanced_bi_analysis.sql` | Advanced BI analysis |
+
+---
+
+# How to Run
+
+## Step 1
+Create database:
+
+```sql
+CREATE DATABASE fedmobile;
